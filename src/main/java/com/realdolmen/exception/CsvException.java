@@ -9,10 +9,11 @@ package com.realdolmen.exception;
  *
  * @author YLOBL55
  */
-public class CsvException {
-    
-    
-    
-    
-    
+public class CsvException extends Exception {
+
+    private static final String MESSAGE = "There is no query possible here";
+
+    public NoQueryPossibleException() {
+        super(MESSAGE);
     }
+}
